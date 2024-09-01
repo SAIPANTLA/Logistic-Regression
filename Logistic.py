@@ -38,16 +38,12 @@ def generate_overlap(n_samples):
     return X, y
 
 #Inno Logo
-st.image(r"innomaticslogo.png")
+st.image(r"C:\Users\SK\Downloads\innomaticslogo.png")
 
 #Title
 st.markdown("<h1 style='text-align: center;'>Logistic Regression</h1>", unsafe_allow_html=True)
 
-
-# Create a sidebar
-st.sidebar.header("Hyperparameters")
-
-# Choosing the Algorithms
+st.sidebar.header("Datasets")
 
 # Add a select box to the sidebar
 dataset_name = st.sidebar.selectbox(
@@ -85,6 +81,9 @@ elif dataset_name == "Overlap":
 
 # Split the dataset into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+
+# Create a sidebar
+st.sidebar.header("Hyperparameters")
 
 # Logistic Regression parameters
 penalty = st.sidebar.selectbox("Penalty", ('l1', 'l2', 'elasticnet', 'none'))
