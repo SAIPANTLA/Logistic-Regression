@@ -38,7 +38,7 @@ def generate_overlap(n_samples):
     return X, y
 
 #Inno Logo
-st.image(r"C:\Users\SK\Downloads\innomaticslogo.png")
+st.image(r"innomaticslogo.png")
 
 #Title
 st.markdown("<h1 style='text-align: center;'>Logistic Regression</h1>", unsafe_allow_html=True)
